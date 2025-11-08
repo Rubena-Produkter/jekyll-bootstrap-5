@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<html lang="{{ site.language }}">
   {%- include head.html -%}
 
   <body>
-
+    {%- include topbar.html -%}
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
@@ -14,7 +13,7 @@
     </main>
 
     {%- include footer.html -%}
-
+    {%- include foot.html -%}
   </body>
 
 </html>

@@ -1,1 +1,29 @@
 Git repo for the Jekyll and Bootstrap based website of #Rubena Produkter
+
+## How to add icons from Font Awesome:
+<code>
+  <i class="fa-solid fa-user"></i>
+  <i class="fa-brands fa-github-square"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-square-facebook"></i>
+  <i class='fa fa-home'></i>
+</code>
+
+## Custom CSS is added to /_sass/minima/_override-bootstrap.scss
+
+## Dark mode switch from:
+https://github.com/404GamerNotFound/bootstrap-5.3-dark-mode-light-mode-switch/blob/main/index.html
+https://mdbootstrap.com/docs/standard/extended/bootstrap-dark-mode-switch/
+
+<!-- Bootstrap 5 switch -->
+<li class="nav-item align-items-center d-flex" >
+  <i class="fas fa-sun"></i>
+  <!-- Default switch -->
+  <div class="ms-2 form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
+  </div>
+  <i class="fas fa-moon"></i>
+</li>
+
+<!-- Dark mode switch. Include the script just before the closing </body> tag -->
+<script src="{{ "/assets/js/dark-mode-switch.js" | relative_url }}"></script>

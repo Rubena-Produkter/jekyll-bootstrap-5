@@ -1,0 +1,33 @@
+/* CSS Overrides */
+html {
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Topbar customization */
+.topbar {
+  color: #ccc;
+  background-color: #1C1C1C;
+  font-size: 14px;
+}
+.topbar a:hover {
+  color: #eee;
+}
+.topbar-left {
+	font-size: 14px;
+}
+.topbar-left span {
+	margin-right: 20px;
+}
+.topbar-left span i {
+	padding-right: 10px;
+}
+.topbar-right {
+	font-size: 14px;
+}
+.topbar-right button {
+  padding: 0px;
+  color: #ccc;
+}
+.topbar-right span {
+	margin-left: 20px;
+}

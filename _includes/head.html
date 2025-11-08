@@ -3,9 +3,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
+  <!-- Add bootstrap -->
+  <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
+
+  <!-- Prevent flickering in Dark mode -->
+  <script>
+  const isSystemThemeSetToDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (isSystemThemeSetToDark) {
+    document.documentElement.dataset.Theme = "dark";
+  };
+  </script>
+
+  <!-- Jekyll theme comes after bootstrap so you can do overrides -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <!-- Add Font Awesome -->
+  <link rel="stylesheet" href="{{ "/assets/font-awesome/css/fontawesome.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/font-awesome/css/brands.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/font-awesome/css/solid.css" | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
 </head>
+
